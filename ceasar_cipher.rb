@@ -4,11 +4,9 @@ def ceasar_cipher( str, offset )
         if alpha.include?( x )
             index = alpha.index(x) + offset
             str[y] = alpha[index % alpha.length]
-        else
-
         end
     end
     puts str
 end
 
-ceasar_cipher( 'Fuck greg is a super cool stinky engine', 5 );
+ceasar_cipher( 'greg is a super cool stinky engine', 5 );
